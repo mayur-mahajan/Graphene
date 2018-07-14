@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F067F38920F98FD800F9486C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F067F38820F98FD800F9486C /* AppDelegate.swift */; };
+		F067F38B20F98FD800F9486C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F067F38A20F98FD800F9486C /* ViewController.swift */; };
+		F067F38E20F98FD800F9486C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F067F38C20F98FD800F9486C /* Main.storyboard */; };
+		F067F39120F98FD800F9486C /* Graphene.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F067F38F20F98FD800F9486C /* Graphene.xcdatamodeld */; };
+		F067F39320F98FDD00F9486C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F067F39220F98FDD00F9486C /* Assets.xcassets */; };
+		F067F39620F98FDD00F9486C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F067F39420F98FDD00F9486C /* LaunchScreen.storyboard */; };
+		F067F3A120F98FDD00F9486C /* GrapheneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F067F3A020F98FDD00F9486C /* GrapheneTests.swift */; };
+		F067F3AC20F98FDD00F9486C /* GrapheneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F067F3AB20F98FDD00F9486C /* GrapheneUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F067F39D20F98FDD00F9486C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F067F37D20F98FD800F9486C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F067F38420F98FD800F9486C;
+			remoteInfo = Graphene;
+		};
+		F067F3A820F98FDD00F9486C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F067F37D20F98FD800F9486C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F067F38420F98FD800F9486C;
+			remoteInfo = Graphene;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F067F38520F98FD800F9486C /* Graphene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graphene.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F067F38820F98FD800F9486C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F067F38A20F98FD800F9486C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F067F38D20F98FD800F9486C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F067F39020F98FD800F9486C /* Graphene.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Graphene.xcdatamodel; sourceTree = "<group>"; };
+		F067F39220F98FDD00F9486C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F067F39520F98FDD00F9486C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F067F39720F98FDD00F9486C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F067F39C20F98FDD00F9486C /* GrapheneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrapheneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F067F3A020F98FDD00F9486C /* GrapheneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapheneTests.swift; sourceTree = "<group>"; };
+		F067F3A220F98FDD00F9486C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F067F3A720F98FDD00F9486C /* GrapheneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrapheneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F067F3AB20F98FDD00F9486C /* GrapheneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapheneUITests.swift; sourceTree = "<group>"; };
+		F067F3AD20F98FDD00F9486C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F067F38220F98FD800F9486C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F067F39920F98FDD00F9486C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F067F3A420F98FDD00F9486C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F067F37C20F98FD800F9486C = {
+			isa = PBXGroup;
+			children = (
+				F067F38720F98FD800F9486C /* Graphene */,
+				F067F39F20F98FDD00F9486C /* GrapheneTests */,
+				F067F3AA20F98FDD00F9486C /* GrapheneUITests */,
+				F067F38620F98FD800F9486C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F067F38620F98FD800F9486C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F067F38520F98FD800F9486C /* Graphene.app */,
+				F067F39C20F98FDD00F9486C /* GrapheneTests.xctest */,
+				F067F3A720F98FDD00F9486C /* GrapheneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F067F38720F98FD800F9486C /* Graphene */ = {
+			isa = PBXGroup;
+			children = (
+				F067F38820F98FD800F9486C /* AppDelegate.swift */,
+				F067F38A20F98FD800F9486C /* ViewController.swift */,
+				F067F38C20F98FD800F9486C /* Main.storyboard */,
+				F067F39220F98FDD00F9486C /* Assets.xcassets */,
+				F067F39420F98FDD00F9486C /* LaunchScreen.storyboard */,
+				F067F39720F98FDD00F9486C /* Info.plist */,
+				F067F38F20F98FD800F9486C /* Graphene.xcdatamodeld */,
+			);
+			path = Graphene;
+			sourceTree = "<group>";
+		};
+		F067F39F20F98FDD00F9486C /* GrapheneTests */ = {
+			isa = PBXGroup;
+			children = (
+				F067F3A020F98FDD00F9486C /* GrapheneTests.swift */,
+				F067F3A220F98FDD00F9486C /* Info.plist */,
+			);
+			path = GrapheneTests;
+			sourceTree = "<group>";
+		};
+		F067F3AA20F98FDD00F9486C /* GrapheneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F067F3AB20F98FDD00F9486C /* GrapheneUITests.swift */,
+				F067F3AD20F98FDD00F9486C /* Info.plist */,
+			);
+			path = GrapheneUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F067F38420F98FD800F9486C /* Graphene */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F067F3B020F98FDD00F9486C /* Build configuration list for PBXNativeTarget "Graphene" */;
+			buildPhases = (
+				F067F38120F98FD800F9486C /* Sources */,
+				F067F38220F98FD800F9486C /* Frameworks */,
+				F067F38320F98FD800F9486C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Graphene;
+			productName = Graphene;
+			productReference = F067F38520F98FD800F9486C /* Graphene.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F067F39B20F98FDD00F9486C /* GrapheneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F067F3B320F98FDD00F9486C /* Build configuration list for PBXNativeTarget "GrapheneTests" */;
+			buildPhases = (
+				F067F39820F98FDD00F9486C /* Sources */,
+				F067F39920F98FDD00F9486C /* Frameworks */,
+				F067F39A20F98FDD00F9486C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F067F39E20F98FDD00F9486C /* PBXTargetDependency */,
+			);
+			name = GrapheneTests;
+			productName = GrapheneTests;
+			productReference = F067F39C20F98FDD00F9486C /* GrapheneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F067F3A620F98FDD00F9486C /* GrapheneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F067F3B620F98FDD00F9486C /* Build configuration list for PBXNativeTarget "GrapheneUITests" */;
+			buildPhases = (
+				F067F3A320F98FDD00F9486C /* Sources */,
+				F067F3A420F98FDD00F9486C /* Frameworks */,
+				F067F3A520F98FDD00F9486C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F067F3A920F98FDD00F9486C /* PBXTargetDependency */,
+			);
+			name = GrapheneUITests;
+			productName = GrapheneUITests;
+			productReference = F067F3A720F98FDD00F9486C /* GrapheneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F067F37D20F98FD800F9486C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Orion Labs";
+				TargetAttributes = {
+					F067F38420F98FD800F9486C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					F067F39B20F98FDD00F9486C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = F067F38420F98FD800F9486C;
+					};
+					F067F3A620F98FDD00F9486C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = F067F38420F98FD800F9486C;
+					};
+				};
+			};
+			buildConfigurationList = F067F38020F98FD800F9486C /* Build configuration list for PBXProject "Graphene" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F067F37C20F98FD800F9486C;
+			productRefGroup = F067F38620F98FD800F9486C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F067F38420F98FD800F9486C /* Graphene */,
+				F067F39B20F98FDD00F9486C /* GrapheneTests */,
+				F067F3A620F98FDD00F9486C /* GrapheneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F067F38320F98FD800F9486C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F067F39620F98FDD00F9486C /* LaunchScreen.storyboard in Resources */,
+				F067F39320F98FDD00F9486C /* Assets.xcassets in Resources */,
+				F067F38E20F98FD800F9486C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F067F39A20F98FDD00F9486C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F067F3A520F98FDD00F9486C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F067F38120F98FD800F9486C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F067F38B20F98FD800F9486C /* ViewController.swift in Sources */,
+				F067F39120F98FD800F9486C /* Graphene.xcdatamodeld in Sources */,
+				F067F38920F98FD800F9486C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F067F39820F98FDD00F9486C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F067F3A120F98FDD00F9486C /* GrapheneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F067F3A320F98FDD00F9486C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F067F3AC20F98FDD00F9486C /* GrapheneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F067F39E20F98FDD00F9486C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F067F38420F98FD800F9486C /* Graphene */;
+			targetProxy = F067F39D20F98FDD00F9486C /* PBXContainerItemProxy */;
+		};
+		F067F3A920F98FDD00F9486C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F067F38420F98FD800F9486C /* Graphene */;
+			targetProxy = F067F3A820F98FDD00F9486C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F067F38C20F98FD800F9486C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F067F38D20F98FD800F9486C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F067F39420F98FDD00F9486C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F067F39520F98FDD00F9486C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F067F3AE20F98FDD00F9486C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F067F3AF20F98FDD00F9486C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F067F3B120F98FDD00F9486C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E787PR834E;
+				INFOPLIST_FILE = Graphene/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orionlabs.Graphene;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F067F3B220F98FDD00F9486C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E787PR834E;
+				INFOPLIST_FILE = Graphene/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orionlabs.Graphene;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F067F3B420F98FDD00F9486C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E787PR834E;
+				INFOPLIST_FILE = GrapheneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orionlabs.GrapheneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graphene.app/Graphene";
+			};
+			name = Debug;
+		};
+		F067F3B520F98FDD00F9486C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E787PR834E;
+				INFOPLIST_FILE = GrapheneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orionlabs.GrapheneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graphene.app/Graphene";
+			};
+			name = Release;
+		};
+		F067F3B720F98FDD00F9486C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E787PR834E;
+				INFOPLIST_FILE = GrapheneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orionlabs.GrapheneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Graphene;
+			};
+			name = Debug;
+		};
+		F067F3B820F98FDD00F9486C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E787PR834E;
+				INFOPLIST_FILE = GrapheneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orionlabs.GrapheneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Graphene;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F067F38020F98FD800F9486C /* Build configuration list for PBXProject "Graphene" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F067F3AE20F98FDD00F9486C /* Debug */,
+				F067F3AF20F98FDD00F9486C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F067F3B020F98FDD00F9486C /* Build configuration list for PBXNativeTarget "Graphene" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F067F3B120F98FDD00F9486C /* Debug */,
+				F067F3B220F98FDD00F9486C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F067F3B320F98FDD00F9486C /* Build configuration list for PBXNativeTarget "GrapheneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F067F3B420F98FDD00F9486C /* Debug */,
+				F067F3B520F98FDD00F9486C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F067F3B620F98FDD00F9486C /* Build configuration list for PBXNativeTarget "GrapheneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F067F3B720F98FDD00F9486C /* Debug */,
+				F067F3B820F98FDD00F9486C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F067F38F20F98FD800F9486C /* Graphene.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F067F39020F98FD800F9486C /* Graphene.xcdatamodel */,
+			);
+			currentVersion = F067F39020F98FD800F9486C /* Graphene.xcdatamodel */;
+			path = Graphene.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F067F37D20F98FD800F9486C /* Project object */;
+}
