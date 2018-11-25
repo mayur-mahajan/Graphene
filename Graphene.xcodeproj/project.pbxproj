@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		F067F38920F98FD800F9486C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F067F38820F98FD800F9486C /* AppDelegate.swift */; };
-		F067F38B20F98FD800F9486C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F067F38A20F98FD800F9486C /* ViewController.swift */; };
-		F067F38E20F98FD800F9486C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F067F38C20F98FD800F9486C /* Main.storyboard */; };
+		F067F38B20F98FD800F9486C /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F067F38A20F98FD800F9486C /* DeviceViewController.swift */; };
 		F067F39120F98FD800F9486C /* Graphene.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F067F38F20F98FD800F9486C /* Graphene.xcdatamodeld */; };
 		F067F39320F98FDD00F9486C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F067F39220F98FDD00F9486C /* Assets.xcassets */; };
 		F067F39620F98FDD00F9486C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F067F39420F98FDD00F9486C /* LaunchScreen.storyboard */; };
 		F067F3A120F98FDD00F9486C /* GrapheneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F067F3A020F98FDD00F9486C /* GrapheneTests.swift */; };
 		F067F3AC20F98FDD00F9486C /* GrapheneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F067F3AB20F98FDD00F9486C /* GrapheneUITests.swift */; };
+		F0CAF28220FACD87004EFB67 /* KarbonDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CAF28120FACD87004EFB67 /* KarbonDevice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,7 @@
 /* Begin PBXFileReference section */
 		F067F38520F98FD800F9486C /* Graphene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graphene.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F067F38820F98FD800F9486C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F067F38A20F98FD800F9486C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F067F38D20F98FD800F9486C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F067F38A20F98FD800F9486C /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
 		F067F39020F98FD800F9486C /* Graphene.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Graphene.xcdatamodel; sourceTree = "<group>"; };
 		F067F39220F98FDD00F9486C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F067F39520F98FDD00F9486C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		F067F3A720F98FDD00F9486C /* GrapheneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrapheneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F067F3AB20F98FDD00F9486C /* GrapheneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapheneUITests.swift; sourceTree = "<group>"; };
 		F067F3AD20F98FDD00F9486C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0CAF28120FACD87004EFB67 /* KarbonDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarbonDevice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				F067F38820F98FD800F9486C /* AppDelegate.swift */,
-				F067F38A20F98FD800F9486C /* ViewController.swift */,
-				F067F38C20F98FD800F9486C /* Main.storyboard */,
+				F067F38A20F98FD800F9486C /* DeviceViewController.swift */,
 				F067F39220F98FDD00F9486C /* Assets.xcassets */,
 				F067F39420F98FDD00F9486C /* LaunchScreen.storyboard */,
 				F067F39720F98FDD00F9486C /* Info.plist */,
 				F067F38F20F98FD800F9486C /* Graphene.xcdatamodeld */,
+				F0CAF28120FACD87004EFB67 /* KarbonDevice.swift */,
 			);
 			path = Graphene;
 			sourceTree = "<group>";
@@ -196,13 +196,16 @@
 				TargetAttributes = {
 					F067F38420F98FD800F9486C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					F067F39B20F98FDD00F9486C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = F067F38420F98FD800F9486C;
 					};
 					F067F3A620F98FDD00F9486C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = F067F38420F98FD800F9486C;
 					};
 				};
@@ -234,7 +237,6 @@
 			files = (
 				F067F39620F98FDD00F9486C /* LaunchScreen.storyboard in Resources */,
 				F067F39320F98FDD00F9486C /* Assets.xcassets in Resources */,
-				F067F38E20F98FD800F9486C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F067F38B20F98FD800F9486C /* ViewController.swift in Sources */,
+				F067F38B20F98FD800F9486C /* DeviceViewController.swift in Sources */,
 				F067F39120F98FD800F9486C /* Graphene.xcdatamodeld in Sources */,
+				F0CAF28220FACD87004EFB67 /* KarbonDevice.swift in Sources */,
 				F067F38920F98FD800F9486C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +300,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F067F38C20F98FD800F9486C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F067F38D20F98FD800F9486C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F067F39420F98FDD00F9486C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,13 +432,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E787PR834E;
 				INFOPLIST_FILE = Graphene/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.orionlabs.Graphene;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -455,13 +451,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E787PR834E;
 				INFOPLIST_FILE = Graphene/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.orionlabs.Graphene;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -481,7 +478,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.orionlabs.GrapheneTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graphene.app/Graphene";
 			};
@@ -502,7 +499,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.orionlabs.GrapheneTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graphene.app/Graphene";
 			};
@@ -522,7 +519,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.orionlabs.GrapheneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Graphene;
 			};
@@ -542,7 +539,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.orionlabs.GrapheneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Graphene;
 			};
