@@ -11,12 +11,12 @@ import UIKit
 class DeviceViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout,
                             NetServiceDelegate, NetServiceBrowserDelegate {
     
-    let cellId = "DeviceCellId"
-    
     let spacings: CGFloat = 15
     let cellsPerRow = 3
     
     let serviceType = "_http._tcp."
+    let serviceDomain = "local."
+
     let serviceBroswer = NetServiceBrowser()
     var devices = [NetService:KarbonDevice]()
     var discoveredServices = [NetService]()
@@ -24,7 +24,7 @@ class DeviceViewController: UICollectionViewController, UICollectionViewDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        collectionView!.register(DeviceCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView!.register(DeviceCell.self, forCellWithReuseIdentifier: DeviceCell.identifier)
         
         setupView()
         startDiscovery()        
@@ -35,7 +35,6 @@ class DeviceViewController: UICollectionViewController, UICollectionViewDelegate
 
         collectionView!.backgroundColor = UIColor.init(white: 0.85, alpha: 1.0)
         collectionView?.alwaysBounceVertical = true
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,7 +44,7 @@ class DeviceViewController: UICollectionViewController, UICollectionViewDelegate
     
     func startDiscovery() {
         serviceBroswer.delegate = self
-        serviceBroswer.searchForServices(ofType: serviceType, inDomain: "local.")
+        serviceBroswer.searchForServices(ofType: serviceType, inDomain: serviceDomain)
     }
     
     func stopDiscovery() {
@@ -67,10 +66,10 @@ class DeviceViewController: UICollectionViewController, UICollectionViewDelegate
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! DeviceCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DeviceCell.identifier, for: indexPath) as! DeviceCell
         let device = discoveredServices[indexPath.row]
         cell.device = device
-        NSLog("Rendering for service \(device.name)")
+        NSLog("Rendering DeviceCell for service \(device.name)")
         return cell
     }
 
@@ -90,7 +89,7 @@ class DeviceViewController: UICollectionViewController, UICollectionViewDelegate
         
         let message: String
         if device.isResolved {
-            message = "Resolved address for \(device.name) at \(device.address!) on \(device.address!):\(device.port!)"
+            message = "Resolved address for \(device.name) on \(device.address!):\(device.port!)"
         }
         else {
             message = "Device \(device.name) is not resolved"
@@ -133,12 +132,16 @@ class DeviceViewController: UICollectionViewController, UICollectionViewDelegate
         }
     }
     
+    func netService(_ sender: NetService, didNotResolve errorDict: [String : NSNumber]) {
+        NSLog("Did not resolve service \(sender.name) - \(errorDict)")
+    }
+    
     //MARK: - NSNetServiceBrowserDelegate methods
     func netServiceBrowser(_ browser: NetServiceBrowser, didFind service: NetService, moreComing: Bool) {
         NSLog("Discovered service \(service)")
         devices[service] = KarbonDevice(named: service.name)
         service.delegate = self
-        service.resolve(withTimeout: 30)
+        service.resolve(withTimeout: 60)
         if (!moreComing) {
             collectionView?.reloadData()
         }
@@ -186,53 +189,3 @@ extension UICollectionView {
         self.backgroundView = nil
     }
 }
-
-class DeviceCell: UICollectionViewCell {
-    
-    weak var device: NetService?
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupCell()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    let deviceName: UILabel = {
-        let label = UILabel()
-        label.textAlignment = .center
-        return label
-    }()
-
-    override func layoutSubviews() {
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOffset = CGSize(width: 0, height: 2.0)
-        layer.shadowRadius = 10.0
-        layer.shadowOpacity = 0.5
-        layer.masksToBounds = false
-        layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.layer.cornerRadius).cgPath
-        
-        
-        addSubview(deviceName)
-        deviceName.translatesAutoresizingMaskIntoConstraints = false
-        deviceName.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
-        deviceName.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
-        deviceName.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        deviceName.heightAnchor.constraint(equalToConstant: 20)
-        deviceName.text = device?.name ?? "Unknown"
-        
-    }
-
-    func setupCell() {
-        layer.cornerRadius = 10
-        backgroundColor = .white
-        
-        layer.cornerRadius = 10.0
-        layer.borderWidth = 5.0
-        layer.borderColor = UIColor.clear.cgColor
-        layer.masksToBounds = true
-    }
-}
-

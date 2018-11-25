@@ -14,6 +14,7 @@
 		F067F39620F98FDD00F9486C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F067F39420F98FDD00F9486C /* LaunchScreen.storyboard */; };
 		F067F3A120F98FDD00F9486C /* GrapheneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F067F3A020F98FDD00F9486C /* GrapheneTests.swift */; };
 		F067F3AC20F98FDD00F9486C /* GrapheneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F067F3AB20F98FDD00F9486C /* GrapheneUITests.swift */; };
+		F07D57EC21AA6F0D00ED49B6 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07D57EB21AA6F0D00ED49B6 /* DeviceCell.swift */; };
 		F0CAF28220FACD87004EFB67 /* KarbonDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CAF28120FACD87004EFB67 /* KarbonDevice.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		F067F3A720F98FDD00F9486C /* GrapheneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrapheneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F067F3AB20F98FDD00F9486C /* GrapheneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapheneUITests.swift; sourceTree = "<group>"; };
 		F067F3AD20F98FDD00F9486C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F07D57EB21AA6F0D00ED49B6 /* DeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
 		F0CAF28120FACD87004EFB67 /* KarbonDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarbonDevice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 				F067F39720F98FDD00F9486C /* Info.plist */,
 				F067F38F20F98FD800F9486C /* Graphene.xcdatamodeld */,
 				F0CAF28120FACD87004EFB67 /* KarbonDevice.swift */,
+				F07D57EB21AA6F0D00ED49B6 /* DeviceCell.swift */,
 			);
 			path = Graphene;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				F067F38B20F98FD800F9486C /* DeviceViewController.swift in Sources */,
 				F067F39120F98FD800F9486C /* Graphene.xcdatamodeld in Sources */,
 				F0CAF28220FACD87004EFB67 /* KarbonDevice.swift in Sources */,
+				F07D57EC21AA6F0D00ED49B6 /* DeviceCell.swift in Sources */,
 				F067F38920F98FD800F9486C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,7 +21,7 @@ class KarbonDevice {
     }
     
     func resolve(address:String, port:Int, record: [String:Data]?) {
-        if isResolved {
+        guard !isResolved else {
             NSLog("ERROR: Device is already resolved")
             return
         }
